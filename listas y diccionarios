@@ -1,0 +1,289 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPOseAqpWM4xQhqO8PozdAt",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/AlexsaCalderon31/PROGCOM-B/blob/main/listas%20y%20diccionarios\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "4KjYxF12RKV7"
+      },
+      "outputs": [],
+      "source": [
+        "#creando conjunto de objetos"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "n=10\n",
+        "lista=[]\n",
+        "for obj in range(n):\n",
+        "  lista.append(\"Funcional\")"
+      ],
+      "metadata": {
+        "id": "3q4vhoU9Rgww"
+      },
+      "execution_count": 1,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "lista\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "0mUqhzjkR18H",
+        "outputId": "a1138737-416d-4efb-8608-88b37a34b3b6"
+      },
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "['Funcional',\n",
+              " 'Funcional',\n",
+              " 'Funcional',\n",
+              " 'Funcional',\n",
+              " 'Funcional',\n",
+              " 'Funcional',\n",
+              " 'Funcional',\n",
+              " 'Funcional',\n",
+              " 'Funcional',\n",
+              " 'Funcional']"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 2
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#calcular cuantos objetos estaran dañados\n",
+        "import random\n",
+        "dañado=random.randint(0,5)\n",
+        "dañado"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "rbVlS79gRU6o",
+        "outputId": "db15a07f-97cf-4fcc-90e8-684418bede52"
+      },
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "0"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 3
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "frutas=[\"manzana\",\"piña\",\"banano\",\"badea\"]\n",
+        "random.sample(frutas,dañado)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "3EOitOWwSkin",
+        "outputId": "306caddb-62ee-47ee-df0c-1558bf504903"
+      },
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "[]"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 8
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "num=list(range(0,9))\n",
+        "sitio_dañado=random.sample(num,dañado)\n",
+        "sitio_dañado"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "kMPcwJfrSdWv",
+        "outputId": "af13c82a-0a52-4945-c5d9-616adf5d816f"
+      },
+      "execution_count": 12,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "[]"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 12
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "sitio_dañado.sort()"
+      ],
+      "metadata": {
+        "id": "NBRwU-nMVp6U"
+      },
+      "execution_count": 14,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "sitio_dañado"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "sawBNR-ZWRJk",
+        "outputId": "5bbb3328-fe5c-42fa-fe70-ac14cc2511b1"
+      },
+      "execution_count": 13,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "[]"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 13
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "producto[1]=\"dañado\"\n",
+        "producto"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 159
+        },
+        "id": "8sfyuk3ZVTcO",
+        "outputId": "dbdc617e-0c80-4bf0-c918-04cb9c1ae806"
+      },
+      "execution_count": 15,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "NameError",
+          "evalue": "name 'producto' is not defined",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mNameError\u001b[0m                                 Traceback (most recent call last)",
+            "\u001b[0;32m/tmp/ipykernel_4640/3991622207.py\u001b[0m in \u001b[0;36m<cell line: 0>\u001b[0;34m()\u001b[0m\n\u001b[0;32m----> 1\u001b[0;31m \u001b[0mproducto\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0;36m1\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;34m\"dañado\"\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m      2\u001b[0m \u001b[0mproducto\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;31mNameError\u001b[0m: name 'producto' is not defined"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "for i in range(n):\n",
+        "  if i in sitio_dañado:\n",
+        "    lista[i]=\"Defectuoso\"#sobrevivir\n",
+        ""
+      ],
+      "metadata": {
+        "id": "tbsj0NmMVF0Y"
+      },
+      "execution_count": 18,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "lista"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "RoxWfM73Xb3O",
+        "outputId": "445c6679-9b1a-4ebe-9d82-948326615367"
+      },
+      "execution_count": 17,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "['Funcional',\n",
+              " 'Funcional',\n",
+              " 'Funcional',\n",
+              " 'Funcional',\n",
+              " 'Funcional',\n",
+              " 'Funcional',\n",
+              " 'Funcional',\n",
+              " 'Funcional',\n",
+              " 'Funcional',\n",
+              " 'Funcional']"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 17
+        }
+      ]
+    }
+  ]
+}
